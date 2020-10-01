@@ -86,7 +86,7 @@ a {
 	padding-bottom: 30px;
 }
 .back-img {
-	background-image: url('/Start/return.png');
+	background-image: url('/imeg/return.png');
 	padding-left: 30px;
 	background-position: left;
 	background-size: contain;
@@ -126,4 +126,11 @@ table {
 	border-color: #a0a0a0;
 	border-collapse: collapse;
 	margin-top: 100px;
+	width: 1170px;
+}
+td, th {
+	padding: 1px;
+	border-style: solid;
+	border-collapse: collapse;
+	border-color: #a0a0a0;
 }

@@ -86,9 +86,9 @@ a {
 	padding-bottom: 30px;
 }
 .back-img {
-	background-image: url('/imeg/return.png');
+	background-image: url('/img/return.png');
 	padding-left: 30px;
-	background-position: left;
+	background-position: left, center;
 	background-size: contain;
 	background-repeat: no-repeat;
 }

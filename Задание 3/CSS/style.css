@@ -83,7 +83,7 @@ a {
 	width: 1170px;
 	margin: 0 auto;
 	padding-top: 30px;
-	padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 .back-img {
 	background-image: url('/img/return.png');
@@ -107,30 +107,59 @@ a {
 }
 .twin-list {
 	padding-left: 200px;
-	font-size: 18px;
+  font-size: 18px;
+  line-height: 1.7;
 }
-p {
-	padding-left: 180px;
-	padding-bottom: 20px;
+ul.twin-list li {
+	color: #2f1ce4;
 }
-figure {
+ul.twin-list li span {
+	color: #000000;
+}
+.program-paragraph {
+  padding-left: 180px;
+  padding-bottom: 20px;
+  line-height: 1.7;
+}
+.program-figure {
 	padding-left: 200px;
-	text-align: center;
 	display: inline-block;
 	margin-top: 50px;
 	margin-bottom: 50px;
-	max-width: 400px;
 }
-table {
-	border-style: solid;
+.program-figure figcaption {
+  text-align: center;
+  padding-left: 80px;
+}
+.program-figure img {
+  max-width: 400px;
+  margin-left: 80px;
+}
+.program-table-1 {
+  border: 3px;
+  border-style: solid;
 	border-color: #a0a0a0;
 	border-collapse: collapse;
 	margin-top: 100px;
-	width: 1170px;
+	border-width: 0.5px;
 }
-td, th {
-	padding: 1px;
-	border-style: solid;
-	border-collapse: collapse;
-	border-color: #a0a0a0;
+.program-table-1 th {
+  border: 1px;
+  border-style: solid;
+  border-color: #a0a0a0;
+  padding: 8px;
+
+}
+.program-table-1 td  {
+  border: 1px;
+  border-style: solid;
+  border-color: #a0a0a0;
+  padding: 13px;
+}
+.text-css {
+	text-decoration: underline;
+	text-decoration-color: #2f1ce4;
+}
+.text-css span {
+	color: #2f1ce4;
 }

@@ -1,177 +1,186 @@
 @font-face {
-  font-family: Gilroy, Gilroy-Bold;
-  src: url(/Fonts/Gilroy-FREE/Gilroy-FREE/Gilroy-Light.otf);
-  src: url(/Fonts/Gilroy-FREE/Gilroy-FREE/Gilroy-ExtraBold.otf)
+	font-family: 'Graphik LCG';
+	src: url('/fonts/GraphikLCG-Medium.woff2') format('woff2'),
+		url('/fonts/GraphikLCG-Medium.woff') format('woff');
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('/fonts/Gilroy-Regular.woff2') format('woff2'),
+		url('/fonts/Gilroy-Regular.woff') format('woff');
+	font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('/fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+		url('/fonts/Gilroy-ExtraBold.woff') format('woff');
+	font-display: swap;
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('/fonts/Gilroy-Medium.woff2') format('woff2'),
+		url('/fonts/Gilroy-Medium.woff') format('woff');
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Gilroy', sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.main-content {
+	background-color: #222020;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.one-heading {
+	color: #ffffff;
+	font-family: "Graphik LCG", sans-serif;
+	margin: 30px;
+}
+
+.down-doc {
+	padding: 20px;
+	color: #ffffff;
+	background-color: #2f1ce4;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #2f1ce4;
+	display: inline-block;
+	margin-right: 13px;
+}
+
+.more-details {
+	padding: 20px;
+	color: #ffffff;
+	background-color: transparent;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #ffffff;
+	display: inline-block;
 }
 
 .container {
-  width: 1550px;
-  margin-left: 373px;
+	width: 1170px;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
-.ferst-img {
-  background-image: url(/moduli/img/Фигура\ 1.svg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
+.back-img {
+	background-image: url('/img/return.png');
+	padding-left: 30px;
+	background-position: left, center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
-h1 {
-  width: 182px;
-  height: 56px;
-  font-size: 40px;
-  letter-spacing: 0px;
-  line-height: 56px;
-  color: #222020;
-  font-weight: 500;
-  font-family: "Graphik";
-  margin-top: 60px;
+.two-heading {
+	margin-top: 100px;
+	padding-left: 100px;
+	font-size: 48px;
+	color: #222020
 }
 
-.a-style {
-  text-decoration: none;
-  color: #000;
+.twin-heading {
+	padding-left: 180px;
+	padding-top: 100px;
+	padding-bottom: 25px;
+	font-size: 36px;
+	color: #2f1ce4;
 }
 
-.a-style:hover {
-  text-decoration: underline;
-  color: #f00;
+.twin-list {
+	padding-left: 200px;
+	font-size: 18px;
+	line-height: 1.7;
 }
 
-.imgun {
-  padding-left: 43px;
-  background-image: url(../img/return.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left center;
+ul.twin-list li {
+	color: #2f1ce4;
 }
 
-.hed-one {
-  width: 770px;
-  height: 42px;
-  font-size: 48px;
-  letter-spacing: 0px;
-  line-height: 56px;
-  color: #222020;
-  font-weight: 800;
-  font-family: "Gilroy", sans-serif;
-  padding-left: 102px;
-  margin-bottom: 104px;
+ul.twin-list li span {
+	color: #000000;
 }
 
-.child {
-  display: inline-block;
-  width: 481px;
-  height: 506px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #ffffff;
-  margin-bottom: 59px;
-  vertical-align: middle;
-  position: relative;
+.program-paragraph {
+	padding-left: 180px;
+	padding-bottom: 20px;
+	line-height: 1.7;
 }
 
-.small-child {
-  width: 480px;
-  height: 180px;
-  background-color: #e8e8e8;
+.program-figure {
+	padding-left: 200px;
+	display: inline-block;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
-.number {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  font-size: 48px;
-  color: #eaeaea;
-  font-family: "Gilroy", sans-serif;
-  font-weight: 500;
+.program-figure figcaption {
+	text-align: center;
+	padding-left: 80px;
 }
 
-.right {
-  margin-left: 59px;
-  margin-right: 450px;
+.program-figure img {
+	max-width: 400px;
+	margin-left: 80px;
 }
 
-.btn-centr {
-  text-align: center;
+.program-table-1 {
+	border: 3px;
+	border-style: solid;
+	border-color: #a0a0a0;
+	border-collapse: collapse;
+	margin-top: 100px;
+	border-width: 0.5px;
 }
 
-.fon-img-1 {
-  background-image: url(/moduli/img/photo-1530435460869-d13625c69bbf.png);
-  background-repeat: no-repeat;
-  background-position: center;
+.program-table-1 th {
+	border: 1px;
+	border-style: solid;
+	border-color: #a0a0a0;
+	padding: 8px;
+
 }
 
-.fon-img-2 {
-  background-image: url(/moduli/img/photo-1516101922849-2bf0be616449.png);
-  background-repeat: no-repeat
+.program-table-1 td {
+	border: 1px;
+	border-style: solid;
+	border-color: #a0a0a0;
+	padding: 13px;
 }
 
-.fon-img-3 {
-  background-image: url(/moduli/img/photo-1507721999472-8ed4421c4af2.png);
-  background-repeat: no-repeat;
-  background-position: 38% 65%;
+.text-css {
+	text-decoration: underline;
+	text-decoration-color: #2f1ce4;
 }
 
-.fon-img-4 {
-  background-image: url(/moduli/img/photo-1539278670307-a69d04dc8a75.png);
-  background-repeat: no-repeat;
-  background-position: 0% 33%;
-}
-
-.mod {
-  min-width: 380px;
-  font-size: 36px;
-  letter-spacing: 0px;
-  line-height: 56px;
-  color: #2f1ce4;
-  font-weight: 800;
-  font-family: "Gilroy", sans-serif;
-  padding-left: 53px;
-  margin-top: 29px;
-  margin-bottom: 33px;
-}
-
-.mod-1 {
-  min-width: 400px;
-  height: 17px;
-  font-size: 16px;
-  letter-spacing: 0px;
-  line-height: 30px;
-  color: #222020;
-  font-family: "Gilroy", sans-serif;
-  list-style-type: none;
-}
-
-.block {
-  width: 480px;
-  height: 505px;
-  filter: drop-shadow(-2.853px 0.927px 10px rgba(83, 83, 83, 0.31));
-  background-color: #ffffff;
-}
-
-.bot-block {
-  width: 1926px;
-  height: 1013px;
-  margin-top: -460px;
-}
-
-.button-one {
-  width: 280px;
-  height: 17px;
-  font-size: 18px;
-  letter-spacing: 0px;
-  color: #2f1ce4;
-  font-family: "Gilroy";
-  text-align: center;
-  line-height: 4.5;
-}
-
-.contur-one {
-  width: 280px;
-  height: 80px;
-  border-radius: 2px;
-  border: 3px solid #2f1ce4;
-  margin-left: 370px;
-  margin-top: 96px;
+.text-css span {
+	color: #2f1ce4;
 }

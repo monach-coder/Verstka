@@ -1,186 +1,365 @@
 @font-face {
-	font-family: 'Graphik LCG';
-	src: url('/fonts/GraphikLCG-Medium.woff2') format('woff2'),
-		url('/fonts/GraphikLCG-Medium.woff') format('woff');
-	font-display: swap;
-	font-weight: 500;
-	font-style: normal;
+  font-family: 'Graphik LCG';
+  src: url('/fonts/Graphik/GraphikLCG-Medium.woff2') format('woff2'),
+    url('/fonts/Graphik/GraphikLCG-Medium.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gilroy';
-	src: url('/fonts/Gilroy-Regular.woff2') format('woff2'),
-		url('/fonts/Gilroy-Regular.woff') format('woff');
-	font-display: swap;
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Graphik-Medium';
+  src: url('/fonts/Graphik/Graphik-Medium.woff2') format('woff2'),
+    url('/fonts/Graphik/Graphik-Medium.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gilroy';
-	src: url('/fonts/Gilroy-ExtraBold.woff2') format('woff2'),
-		url('/fonts/Gilroy-ExtraBold.woff') format('woff');
-	font-display: swap;
-	font-weight: 800;
-	font-style: normal;
+  font-family: 'Gilroy-Regular';
+  src: url('/fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
+    url('/fonts/Gilroy/Gilroy-Regular.woff') format('woff');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gilroy';
-	src: url('/fonts/Gilroy-Medium.woff2') format('woff2'),
-		url('/fonts/Gilroy-Medium.woff') format('woff');
-	font-display: swap;
-	font-weight: 500;
-	font-style: normal;
+  font-family: 'Gilroy-ExtraBold';
+  src: url('/fonts/Gilroy/Gilroy-ExtraBold.woff2') format('woff2'),
+    url('/fonts/Gilroy/Gilroy-ExtraBold.woff') format('woff');
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('/fonts/Gilroy/Gilroy-Medium.woff2') format('woff2'),
+    url('/fonts/Gilroy/Gilroy-Medium.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Gilroy', sans-serif;
+  font-family: 'Gilroy', sans-serif;
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .main-content {
-	background-color: #222020;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  background-color: #222020;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .one-heading {
-	color: #ffffff;
-	font-family: "Graphik LCG", sans-serif;
-	margin: 30px;
+  color: #ffffff;
+  font-family: "Graphik LCG", sans-serif;
+  margin: 30px;
 }
 
 .down-doc {
-	padding: 20px;
-	color: #ffffff;
-	background-color: #2f1ce4;
-	border-style: solid;
-	border-width: 3px;
-	border-color: #2f1ce4;
-	display: inline-block;
-	margin-right: 13px;
+  padding: 20px;
+  color: #ffffff;
+  background-color: #2f1ce4;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #2f1ce4;
+  display: inline-block;
+  margin-right: 13px;
 }
 
 .more-details {
-	padding: 20px;
-	color: #ffffff;
-	background-color: transparent;
-	border-style: solid;
-	border-width: 3px;
-	border-color: #ffffff;
-	display: inline-block;
+  padding: 20px;
+  color: #ffffff;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #ffffff;
+  display: inline-block;
 }
 
 .container {
-	width: 1170px;
-	margin: 0 auto;
-	padding-top: 30px;
-	padding-bottom: 30px;
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container2 {
+  width: 1550px;
+  margin: 58px 0 0 370px;
 }
 
 .back-img {
-	background-image: url('/img/return.png');
-	padding-left: 30px;
-	background-position: left, center;
-	background-size: contain;
-	background-repeat: no-repeat;
+  background-image: url("../img/return.png");
+  padding-left: 40px;
+  background-position: left, center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.back-text {
+  width: 101px;
+  height: 21px;
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: normal;
+  color: #222020;
+  font-family: "Gilroy-Medium";
+}
+
+.modul-head {
+  max-width: 200px;
+  height: 42px;
+  font-size: 40px;
+  letter-spacing: normal;
+  /*TODO нужно-ли здесь это прописывать или это касаеться только там где текста больше одной строчки?*/
+  line-height: normal;
+  /*TODO нужно-ли здесь это прописывать или это касаеться только там где текста больше одной строчки?*/
+  padding-bottom: 60px;
+  color: #222020;
+  font-family: "Graphik-Medium";
+}
+
+.hed-one {
+  margin-top: 104px;
+  margin-left: 24px;
+  max-width: 700px;
+  height: 42px;
+  font-size: 48px;
+  letter-spacing: normal;
+  line-height: normal;
+  color: #222020;
+  font-family: "Gilroy-ExtraBold";
 }
 
 .two-heading {
-	margin-top: 100px;
-	padding-left: 100px;
-	font-size: 48px;
-	color: #222020
+  margin-top: 100px;
+  padding-left: 100px;
+  font-size: 48px;
+  color: #222020
 }
 
 .twin-heading {
-	padding-left: 180px;
-	padding-top: 100px;
-	padding-bottom: 25px;
-	font-size: 36px;
-	color: #2f1ce4;
+  padding-left: 180px;
+  padding-top: 100px;
+  padding-bottom: 25px;
+  font-size: 36px;
+  color: #2f1ce4;
 }
 
 .twin-list {
-	padding-left: 200px;
-	font-size: 18px;
-	line-height: 1.7;
+  padding-left: 200px;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 ul.twin-list li {
-	color: #2f1ce4;
+  color: #2f1ce4;
 }
 
 ul.twin-list li span {
-	color: #000000;
+  color: #000000;
 }
 
 .program-paragraph {
-	padding-left: 180px;
-	padding-bottom: 20px;
-	line-height: 1.7;
+  padding-left: 180px;
+  padding-bottom: 20px;
+  line-height: 1.7;
 }
 
 .program-figure {
-	padding-left: 200px;
-	display: inline-block;
-	margin-top: 50px;
-	margin-bottom: 50px;
+  padding-left: 200px;
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .program-figure figcaption {
-	text-align: center;
-	padding-left: 80px;
+  text-align: center;
+  padding-left: 80px;
 }
 
 .program-figure img {
-	max-width: 400px;
-	margin-left: 80px;
+  max-width: 400px;
+  margin-left: 80px;
 }
 
 .program-table-1 {
-	border: 3px;
-	border-style: solid;
-	border-color: #a0a0a0;
-	border-collapse: collapse;
-	margin-top: 100px;
-	border-width: 0.5px;
+  border: 3px;
+  border-style: solid;
+  border-color: #a0a0a0;
+  border-collapse: collapse;
+  margin-top: 100px;
+  border-width: 0.5px;
 }
 
 .program-table-1 th {
-	border: 1px;
-	border-style: solid;
-	border-color: #a0a0a0;
-	padding: 8px;
+  border: 1px;
+  border-style: solid;
+  border-color: #a0a0a0;
+  padding: 8px;
 
 }
 
 .program-table-1 td {
-	border: 1px;
-	border-style: solid;
-	border-color: #a0a0a0;
-	padding: 13px;
+  border: 1px;
+  border-style: solid;
+  border-color: #a0a0a0;
+  padding: 13px;
 }
 
 .text-css {
-	text-decoration: underline;
-	text-decoration-color: #2f1ce4;
+  text-decoration: underline;
+  text-decoration-color: #2f1ce4;
 }
 
 .text-css span {
-	color: #2f1ce4;
+  color: #2f1ce4;
+}
+
+.child {
+  display: inline-block;
+  width: 45%;
+  min-height: 300px;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 20px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.small-child {
+  width: 480px;
+  height: 180px;
+  text-align: center;
+  background-color: #e8e8e8;
+}
+
+.fon-img-1 {
+  background-image: url('../img/photo-1530435460869-d13625c69bbf.png');
+  background-repeat: no-repeat;
+}
+
+.fon-img-2 {
+  background-image: url('../img/photo-1516101922849-2bf0be616449.png');
+  background-repeat: no-repeat;
+}
+
+.fon-img-3 {
+  background-image: url('../img/photo-1507721999472-8ed4421c4af2.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.fon-img-4 {
+  background-image: url('../img/photo-1539278670307-a69d04dc8a75.png');
+  background-repeat: no-repeat;
+}
+
+.block {
+  margin: 78px 59px 0 0;
+  width: 480px;
+  height: 505px;
+  filter: drop-shadow(-2.853px 0.927px 10px rgba(83, 83, 83, 0.31));
+  background-color: #ffffff;
+}
+
+.block-bottom {
+  margin: 59px 59px 0 0;
+  width: 480px;
+  height: 505px;
+  filter: drop-shadow(-2.853px 0.927px 10px rgba(83, 83, 83, 0.31));
+  background-color: #ffffff;
+}
+
+.number {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  max-width: 50px;
+  height: 43px;
+  font-size: 48px;
+  letter-spacing: normal;
+  line-height: normal;
+  color: #eaeaea;
+  font-family: "Gilroy-Medium";
+  text-align: center;
+}
+
+.parent {
+  padding-left: 78px;
+}
+
+.btn-center {
+  text-align: center;
+}
+
+.mod {
+  margin: 29px 0 29px 52px;
+  width: 480px;
+  height: 30px;
+  font-size: 36px;
+  letter-spacing: normal;
+  line-height: normal;
+  color: #2f1ce4;
+  font-family: "Gilroy-ExtraBold";
+}
+
+.mod-1 {
+  padding-left: 53px;
+  max-width: 350px;
+  height: 17px;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 21px;
+  color: #222020;
+  font-family: "Gilroy-Regular";
+  list-style-type: none;
+}
+
+.button-one {
+  width: 280px;
+  height: 17px;
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 4;
+  color: #2f1ce4;
+  font-family: "Gilroy-Regular";
+  text-align: center;
+}
+
+.contur-one {
+  margin: 96px 448px;
+  width: 280px;
+  height: 80px;
+  border-radius: 2px;
+  border: 3px solid #2f1ce4;
+}
+
+.ferst-img {
+  background-image: url('../img/Фигура 1.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}/*TODO Вот тут я не уверен в том что делаю совсем )). Нужна ваша помощь*/
+
+.bot-block {
+  width: 1924px;
+  height: 1030px;
+  margin-top: -500px;
 }

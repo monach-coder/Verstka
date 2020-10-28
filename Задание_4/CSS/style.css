@@ -345,6 +345,13 @@ ul.twin-list li span {
   background-size: contain;
 }
 
+/* .ferst1-img {
+  background-image: url('../img/wafe.svg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 100%;
+} */
+
 .bot-block {
   width: 1924px;
   height: 1030px;

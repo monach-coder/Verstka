@@ -193,36 +193,26 @@ ul.twin-list li span {
 }
 
 .modul-head {
-  display: inline-block;
-  width: 1550px;
-  height: 42px;
+  display: block;
   font-size: 40px;
-  letter-spacing: normal;
-  line-height: normal;
-  padding-bottom: 60px;
+  margin: 60px 0 60px 0;
   color: #222020;
-  font-family: "Graphik";
-  font-weight: 500;
+  font-family: "Graphik LCG";
 }
 
 .back-text {
   width: 101px;
   height: 21px;
   font-size: 18px;
-  letter-spacing: normal;
-  line-height: normal;
   color: #222020;
   font-family: "Gilroy";
   font-weight: 500;
 }
 
 .hed-one {
-  margin-top: 104px;
-  margin-left: 24px;
+  margin: 104px 0 80px 24px;
   max-width: 700px;
   font-size: 48px;
-  letter-spacing: normal;
-  line-height: normal;
   color: #222020;
   font-family: "Gilroy";
   font-weight: 800;
@@ -230,10 +220,9 @@ ul.twin-list li span {
 
 .child {
   display: inline-block;
-  width: 45%;
+  width: 47%;
   min-height: 300px;
   border: 1px solid #e8e8e8;
-  margin-bottom: 20px;
   vertical-align: middle;
   position: relative;
 }
@@ -260,19 +249,23 @@ ul.twin-list li span {
 
 .block {
   display: inline-block;
-  margin: 78px 59px 0 0;
-  width: 480px;
-  height: 505px;
+  width: 47%;
+  min-height: 505px;
   filter: drop-shadow(-2.853px 0.927px 10px rgba(83, 83, 83, 0.31));
   background-color: #ffffff;
 }
 
+.smal-blok {
+  min-width: 47%;
+  min-height: 180px;
+}
+
 .block-bottom {
-  margin: 59px 59px 0 0;
-  width: 480px;
-  height: 505px;
+  width: 47%;
+  min-height: 505px;
   filter: drop-shadow(-2.853px 0.927px 10px rgba(83, 83, 83, 0.31));
   background-color: #ffffff;
+  margin-top: 50px;
 }
 
 .number {
@@ -282,8 +275,6 @@ ul.twin-list li span {
   max-width: 50px;
   height: 43px;
   font-size: 48px;
-  letter-spacing: normal;
-  line-height: normal;
   color: #eaeaea;
   font-family: "Gilroy";
   text-align: center;
@@ -291,19 +282,17 @@ ul.twin-list li span {
 }
 
 .parent {
-  padding-left: 78px;
+  padding: 0 80px;
 }
 
-.btn-center {
-  text-align: center;
+.right {
+  margin-left: 50px;
 }
 
 .mod {
-  padding: 210px 0 29px 52px;
+  padding: 29px 0 29px 52px;
   width: 480px;
   font-size: 36px;
-  letter-spacing: normal;
-  line-height: normal;
   color: #2f1ce4;
   font-family: "Gilroy";
   font-weight: 800;
@@ -314,29 +303,23 @@ ul.twin-list li span {
   max-width: 350px;
   font-size: 16px;
   letter-spacing: normal;
-  line-height: 21px;
   color: #222020;
   font-family: "Gilroy";
   list-style-type: none;
 }
 
-.button-one {
-  width: 280px;
-  height: 17px;
-  font-size: 18px;
-  letter-spacing: normal;
-  line-height: 4;
-  color: #2f1ce4;
-  font-family: "Gilroy";
-  text-align: center;
+.mod-1 li {
+  margin-bottom: 20px;
 }
 
-.contur-one {
-  margin: 96px 448px;
-  width: 280px;
-  height: 80px;
+.button-one {
+  font-size: 18px;
+  color: #2f1ce4;
+  font-family: "Gilroy";
   border-radius: 2px;
   border: 3px solid #2f1ce4;
+  padding: 30px 80px;
+  background-color: transparent;
 }
 
 .ferst1-img {
@@ -352,3 +335,7 @@ ul.twin-list li span {
   height: 1030px;
   margin-top: -500px;
 }
+
+/* ul li {
+  margin-bottom: 20px;
+} */
